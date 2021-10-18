@@ -1,5 +1,5 @@
 [package]
-name = "option"
+name = "bench_option"
 version = "0.1.0"
 edition = "2018"
 
@@ -9,5 +9,5 @@ edition = "2018"
 criterion = "0.3"
 
 [[bench]]
-name = "option"
+name = "bench_option"
 harness = false
