@@ -14,6 +14,7 @@ pub fn sum_simple() -> u64 {
             sum += n;
         }
     }
+    //assert_eq!(sum, 127466507);
     sum
 }
 
@@ -70,5 +71,12 @@ pub fn sum_boxed() -> u64 {
             sum += k;
         }
     }
+    sum
+}
+
+#[allow(clippy::let_and_return)]
+pub fn sum_iterator() -> u64 {
+    let sum = (1..1_000_000).flat_map(get_optional_int).sum();
+    //assert_eq!(sum, 127466507);
     sum
 }
